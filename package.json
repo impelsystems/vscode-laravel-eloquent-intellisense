@@ -1,0 +1,25 @@
+{
+    "name": "laravel-eloquent-intellisense",
+    "displayName": "Laravel Eloquent Intellisense",
+    "description": "Intellisense enhancement for Laravel Eloquent.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.45.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "php",
+            "aliases": ["php", "php"],
+            "extensions": [".php"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "php",
+            "scopeName": "source.php",
+            "path": "./syntaxes/php.tmLanguage.json"
+        }]
+    }
+}
